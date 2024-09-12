@@ -49,6 +49,6 @@ match Clube_do_coracao:
             print("Parabéns, o Choro ainda não acabou")
         elif time == "Cruzeiro":
             print("Quase morreu na praia")
-        elif time == "Juventos":
+        elif time == "Corintians":
             print("Segunda divisão.................")
         
