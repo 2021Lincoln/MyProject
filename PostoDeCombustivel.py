@@ -23,11 +23,11 @@ while resp == "S" or resp == "s":
     #Acumulando as litragens por combustivel
     if combustivel == "E" or combustivel == "e":
         etanol = etanol + litros 
-    elif tipo_combustivel == "GC" or combustivel "gc":
+    elif combustivel == "GC" or combustivel == "gc":
         gasolina = gasolina + litros
-    elif tipo_combustivel == "GA" or combustivel == "ga":
+    elif combustivel == "GA" or combustivel == "ga":
         gasolinaAd = gasolinaAd + litros
-    elif tipo_combustivel == "D" or combustivel == "d":
+    elif combustivel == "D" or combustivel == "d":
         diesel = diesel + litros
     else:
         print("Esse tipo de combustivel não existe")
@@ -35,9 +35,8 @@ while resp == "S" or resp == "s":
     resp = input("Deseja continuar(S/N): ")
 #Finalizando o bloco de repetição
 #Apresentando os resultados
-print(f"A quantidade de Etanol vendida foi: {etanol} litros, gerando um montante de R$ {(etanol * 3.70):.2f}.")
-print(f"A quantidade de Gasolina comum vendida foi: {gasolina} litros, gerando um montante de R$ {(gasolina * 5.39):.2f}.")
-print(f"A quantidade de Gasolina Aditivada vendida foi: {gasolinaAd} litros, gerando um montante de R$ {(gasolinaAd * 5.75):.2f}")
-print(f"A quantidade de Diesel vendida foi :{diesel} litros, gerando um montante de R$ {(diesel * 4.90):.2f}.")
-print(f"A quantidade total de litros vendido foi de {etanol + gasolina + gasolinaAd + diesel} litros, 
-gerando um montante total de R${(etanol * 3.70) + (gasolina * 5.39) + (gasolinaAd * 5.75) + (diesel * 4.90):.2f}.")
+print(f"A quantidade de Etanol vendida foi de  {etanol} litros, gerando um montante de R$ {(etanol * 3.70):.2f}.")
+print(f"A quantidade de Gasolina comum vendida foi de {gasolina} litros, gerando um montante de R$ {(gasolina * 5.39):.2f}.")
+print(f"A quantidade de Gasolina Aditivada vendida foi de {gasolinaAd} litros, gerando um montante de R$ {(gasolinaAd * 5.75):.2f}")
+print(f"A quantidade de Diesel vendida foi de {diesel} litros, gerando um montante de R$ {(diesel * 4.90):.2f}.")
+print(f"A quantidade total de litros vendido foi de {etanol + gasolina + gasolinaAd + diesel} litros, gerando um montante total de R${(etanol * 3.70) + (gasolina * 5.39) + (gasolinaAd * 5.75) + (diesel * 4.90):.2f}.")
