@@ -4,9 +4,11 @@ criado um vetor chamado GABARITO com as seguintes respostas: A, B, B, D, E"""
 
 
 gabarito = ["A", "B", "B", "D", "E"]
-resultado = [0]
+acerto = 0
 
-for i in range(gabarito):
+
+for i in gabarito:
     letra = input("Digite a letra desejada: ")
-    if letra[i] == resultado[0]:
-        resultado.append()
+    if letra == i:
+        acerto = acerto + 1
+print("total de acertos", acerto)
