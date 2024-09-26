@@ -8,7 +8,7 @@ idade
 Faça um programa que determine e escreva:
 a) A maior idade dos habitantes:
 b) A quantidade de individuos do sexo feminino cuja idade está entre 18 e 35 anos, inclusive:
-c) A quantidade de individuos que tenha olhos verdes e cabelos louros:
+c) A quantidade de individuos que tenha olhos verdes e cabelos louros :
 """
 
 
