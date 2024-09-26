@@ -9,39 +9,34 @@ E-etanol, GC-Gasolina comum, GA-Gasolina aditivada e D-Diesel),
 Ao final de um dia mostre a qauntidade de litros e o valor arrecadado discriminado por tipo de combustivel"""
 
 
+gasolina = 0
+etanol = 0
+gasolinaAd = 0
+diesel = 0
 resp = "S"
-gasolina = 5,39
-etanol = 3.70
-gasolinaAd = 5.75
-diesel = 4.90
-soma_1 = 0
-soma_2 = 0
-soma_3 = 0
-soma_4 = 0
+#Iniciando o bloco de repetição
 while resp == "S" or resp == "s":
+    #Coletando os dados
+    combustivel = input("Informe o tipo de combustivel, E-etanol, GC-Gasolina comum, GA-Gasolina aditivada, D-Diesel: ")
 
-    tipo_combustivel = input("Informe o tipo de combustivel, E-etanol, GC-Gasolina comum, GA-Gasolina aditivada, D-Diesel: ")
-
-    litros = float(input("Quantos litros de combustivel: "))
-
-    if tipo_combustivel == "E":
-        etanol = litros * etanol
-        soma_1 += etanol 
-    elif tipo_combustivel == "Gc":
-        gasolina = litros * gasolina
-        soma_2 += gasolina
-    elif tipo_combustivel == "Ga":
-        gasolinaAd = litros * gasolinaAd
-        soma_3 += gasolinaAd
-    elif tipo_combustivel == "D":
-        diesel = litros * diesel
-        soma_4 += diesel
+    litros = float(input("Informe a quantidade de litros : "))
+    #Acumulando as litragens por combustivel
+    if combustivel == "E" or combustivel == "e":
+        etanol = etanol + litros 
+    elif combustivel == "GC" or combustivel == "gc":
+        gasolina = gasolina + litros
+    elif combustivel == "GA" or combustivel == "ga":
+        gasolinaAd = gasolinaAd + litros
+    elif combustivel == "D" or combustivel == "d":
+        diesel = diesel + litros
     else:
         print("Esse tipo de combustivel não existe")
 
     resp = input("Deseja continuar(S/N): ")
-
-    print(f"A quantidade de Etanol foi de: {soma_1}")
-    print(f"A quantidade de Gasolina comum foi de: {soma_2}")
-    print(f"A quantidade de Gasolina Aditivada foi de: {soma_3}")
-    print(f"A quantidade de Diesel foi de:{soma_4}")
+#Finalizando o bloco de repetição
+#Apresentando os resultados
+print(f"A quantidade de Etanol vendida foi de  {etanol} litros, gerando um montante de R$ {(etanol * 3.70):.2f}.")
+print(f"A quantidade de Gasolina comum vendida foi de {gasolina} litros, gerando um montante de R$ {(gasolina * 5.39):.2f}.")
+print(f"A quantidade de Gasolina Aditivada vendida foi de {gasolinaAd} litros, gerando um montante de R$ {(gasolinaAd * 5.75):.2f}")
+print(f"A quantidade de Diesel vendida foi de {diesel} litros, gerando um montante de R$ {(diesel * 4.90):.2f}.")
+print(f"A quantidade total de litros vendido foi de {etanol + gasolina + gasolinaAd + diesel} litros, gerando um montante total de R${(etanol * 3.70) + (gasolina * 5.39) + (gasolinaAd * 5.75) + (diesel * 4.90):.2f}.")
