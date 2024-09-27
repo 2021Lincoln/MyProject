@@ -4,7 +4,7 @@ sabendo que serão fornecidos pelo usuario as letras assinaladas em cada questã
 criado um vetor chamado GABARITO com as seguintes respostas: A, B, B, D, E"""
 
 
-gabarito = ["A", "B", "B", "D", "E"]
+gabarito = ["A", "B", "B", "D", "D", "E"]
 acerto = 0
 
 
